@@ -1,0 +1,116 @@
+\hypertarget{_stack_8cpp}{}\section{Stack/\+Stack/\+Stack.cpp File Reference}
+\label{_stack_8cpp}\index{Stack/\+Stack/\+Stack.\+cpp@{Stack/\+Stack/\+Stack.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K}
+\begin{DoxyCompactList}\small\item\em Struktura \hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_stack_8cpp_a477d772b9285f59583ca1840c43f4e7e}{Empty\+S\+T\+A\+C\+K} (\hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K} $\ast$$\ast$p\+Head)
+\begin{DoxyCompactList}\small\item\em Funkcija opredeleniya pustoty steka. \end{DoxyCompactList}\item 
+void \hyperlink{_stack_8cpp_a954faa880ebb7107fd4bbdd2ad660458}{Add\+S\+T\+A\+C\+K} (\hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K} $\ast$$\ast$p\+Head, int value)
+\begin{DoxyCompactList}\small\item\em Funkcija dobavleniya jelementa. \end{DoxyCompactList}\item 
+void \hyperlink{_stack_8cpp_a5e34d277d835ab516ea05a9e8684e7f8}{Delete\+S\+T\+A\+C\+K} (\hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K} $\ast$$\ast$p\+Head)
+\begin{DoxyCompactList}\small\item\em Funkcija udaleniya jelementa. \end{DoxyCompactList}\item 
+void \hyperlink{_stack_8cpp_ad6f64f23e84fb03b1bdf1792e67a4b36}{Print\+S\+T\+A\+C\+K} (\hyperlink{struct_s_t_a_c_k}{S\+T\+A\+C\+K} $\ast$$\ast$p\+Head)
+\begin{DoxyCompactList}\small\item\em Funkcija pechataeti. \end{DoxyCompactList}\item 
+int \hyperlink{_stack_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Glavnaja funkcija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_stack_8cpp_a954faa880ebb7107fd4bbdd2ad660458}{}\index{Stack.\+cpp@{Stack.\+cpp}!Add\+S\+T\+A\+C\+K@{Add\+S\+T\+A\+C\+K}}
+\index{Add\+S\+T\+A\+C\+K@{Add\+S\+T\+A\+C\+K}!Stack.\+cpp@{Stack.\+cpp}}
+\subsubsection[{Add\+S\+T\+A\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}void Add\+S\+T\+A\+C\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+T\+A\+C\+K} $\ast$$\ast$}]{p\+Head, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{_stack_8cpp_a954faa880ebb7107fd4bbdd2ad660458}
+
+
+Funkcija dobavleniya jelementa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$p\+Head} & -\/ dvojnoj ukazatel\textquotesingle{} na \char`\"{}golovu\char`\"{} steka \\
+\hline
+{\em value} & -\/ nekotoroe znachenie jelementa steka \\
+\hline
+\end{DoxyParams}
+Sozdanie novogo jelementa
+
+Prisvoenie jelementu znachenija
+
+Formirovanie adresnoj chasti
+
+Esli stek ne pust, to vershina dolzhna ukazyvat\textquotesingle{} na predydushhij jelement
+
+Dobavlenie jelementa \hypertarget{_stack_8cpp_a5e34d277d835ab516ea05a9e8684e7f8}{}\index{Stack.\+cpp@{Stack.\+cpp}!Delete\+S\+T\+A\+C\+K@{Delete\+S\+T\+A\+C\+K}}
+\index{Delete\+S\+T\+A\+C\+K@{Delete\+S\+T\+A\+C\+K}!Stack.\+cpp@{Stack.\+cpp}}
+\subsubsection[{Delete\+S\+T\+A\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}void Delete\+S\+T\+A\+C\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+T\+A\+C\+K} $\ast$$\ast$}]{p\+Head}
+\end{DoxyParamCaption}
+)}\label{_stack_8cpp_a5e34d277d835ab516ea05a9e8684e7f8}
+
+
+Funkcija udaleniya jelementa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$p\+Head} & -\/ dvojnoj ukazatel\textquotesingle{} na \char`\"{}golovu\char`\"{} steka \\
+\hline
+\end{DoxyParams}
+Proverka na pustotu
+
+Esli stek ne pust\+:
+
+
+\begin{DoxyItemize}
+\item Udalenie jelementa 
+\end{DoxyItemize}\hypertarget{_stack_8cpp_a477d772b9285f59583ca1840c43f4e7e}{}\index{Stack.\+cpp@{Stack.\+cpp}!Empty\+S\+T\+A\+C\+K@{Empty\+S\+T\+A\+C\+K}}
+\index{Empty\+S\+T\+A\+C\+K@{Empty\+S\+T\+A\+C\+K}!Stack.\+cpp@{Stack.\+cpp}}
+\subsubsection[{Empty\+S\+T\+A\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}int Empty\+S\+T\+A\+C\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+T\+A\+C\+K} $\ast$$\ast$}]{p\+Head}
+\end{DoxyParamCaption}
+)}\label{_stack_8cpp_a477d772b9285f59583ca1840c43f4e7e}
+
+
+Funkcija opredeleniya pustoty steka. 
+
+\hypertarget{_stack_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\index{Stack.\+cpp@{Stack.\+cpp}!main@{main}}
+\index{main@{main}!Stack.\+cpp@{Stack.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_stack_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Glavnaja funkcija. 
+
+Vvod kolichestva dejstvij so stekom
+
+Cikl dejstvij so stekom\+:
+
+Pechat\textquotesingle{} steka \hypertarget{_stack_8cpp_ad6f64f23e84fb03b1bdf1792e67a4b36}{}\index{Stack.\+cpp@{Stack.\+cpp}!Print\+S\+T\+A\+C\+K@{Print\+S\+T\+A\+C\+K}}
+\index{Print\+S\+T\+A\+C\+K@{Print\+S\+T\+A\+C\+K}!Stack.\+cpp@{Stack.\+cpp}}
+\subsubsection[{Print\+S\+T\+A\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+S\+T\+A\+C\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+T\+A\+C\+K} $\ast$$\ast$}]{p\+Head}
+\end{DoxyParamCaption}
+)}\label{_stack_8cpp_ad6f64f23e84fb03b1bdf1792e67a4b36}
+
+
+Funkcija pechataeti. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$p\+Head} & -\/ dvojnoj ukazatel\textquotesingle{} na \char`\"{}golovu\char`\"{} steka \\
+\hline
+\end{DoxyParams}

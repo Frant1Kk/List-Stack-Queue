@@ -1,0 +1,140 @@
+\hypertarget{_list_8cpp}{}\section{List/\+List/\+List.cpp File Reference}
+\label{_list_8cpp}\index{List/\+List/\+List.\+cpp@{List/\+List/\+List.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_l_i_s_t}{L\+I\+S\+T}
+\begin{DoxyCompactList}\small\item\em Struktura \hyperlink{struct_l_i_s_t}{L\+I\+S\+T}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_list_8cpp_a6a36b4a1359767f9b3f0147f68e732e3}{Add\+L\+I\+S\+T} (int value, int position)
+\begin{DoxyCompactList}\small\item\em Ukazatel\textquotesingle{} na pervyj jelement. \end{DoxyCompactList}\item 
+int \hyperlink{_list_8cpp_abb9c9530f8d7fec6167cf3313edabbcb}{Delete\+L\+I\+S\+T} (int position)
+\begin{DoxyCompactList}\small\item\em Funkcija udaleniya jelementa. \end{DoxyCompactList}\item 
+void \hyperlink{_list_8cpp_aefdc6c4e6076f000ab761f54f8febff1}{Print\+L\+I\+S\+T} ()
+\begin{DoxyCompactList}\small\item\em Funkcija pechati spiska. \end{DoxyCompactList}\item 
+int \hyperlink{_list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Glavnaja funkcija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_l_i_s_t}{L\+I\+S\+T} $\ast$ \hyperlink{_list_8cpp_a61bd81e6f5c687a863294b2c3404f0bc}{p\+Head}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_list_8cpp_a6a36b4a1359767f9b3f0147f68e732e3}{}\index{List.\+cpp@{List.\+cpp}!Add\+L\+I\+S\+T@{Add\+L\+I\+S\+T}}
+\index{Add\+L\+I\+S\+T@{Add\+L\+I\+S\+T}!List.\+cpp@{List.\+cpp}}
+\subsubsection[{Add\+L\+I\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}void Add\+L\+I\+S\+T (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_a6a36b4a1359767f9b3f0147f68e732e3}
+
+
+Ukazatel\textquotesingle{} na pervyj jelement. 
+
+Funkcija dobavleniya jelementa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ znachenie jelementa \\
+\hline
+{\em position} & -\/ pozicija jelementa \\
+\hline
+\end{DoxyParams}
+Prisvoenie znachenija
+
+Esli spisok pust\+:
+
+
+\begin{DoxyItemize}
+\item Ustanovka ukazatelja p\+Next
+\item Opredelenie \char`\"{}golovy\char`\"{} spiska
+\end{DoxyItemize}
+
+Esli spisok ne pust\+:
+
+
+\begin{DoxyItemize}
+\item Dobavlenie jelementa 
+\end{DoxyItemize}\hypertarget{_list_8cpp_abb9c9530f8d7fec6167cf3313edabbcb}{}\index{List.\+cpp@{List.\+cpp}!Delete\+L\+I\+S\+T@{Delete\+L\+I\+S\+T}}
+\index{Delete\+L\+I\+S\+T@{Delete\+L\+I\+S\+T}!List.\+cpp@{List.\+cpp}}
+\subsubsection[{Delete\+L\+I\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}int Delete\+L\+I\+S\+T (
+\begin{DoxyParamCaption}
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_abb9c9530f8d7fec6167cf3313edabbcb}
+
+
+Funkcija udaleniya jelementa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & -\/ pozicija jelementa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ esli spisok pust 
+\end{DoxyReturn}
+Proverka spiska na pustotu
+
+Proverka na suschestvovanie pozicii
+
+Udalenie jelementa\+:
+
+
+\begin{DoxyItemize}
+\item Esli jeto pervyj jelement\+:
+\end{DoxyItemize}
+
+1) Sdvig ukazatelja
+
+2) Sdvig \char`\"{}golovy\char`\"{} spiska
+
+
+\begin{DoxyItemize}
+\item Esli ne pervyj jelement\+:
+\end{DoxyItemize}
+
+1) Nastrojka ukazatelja na jelement, kotoryj stoit pered udaljaemym
+
+2) Nastojka ukazatelja na udaljaemyj jelement
+
+3) Najstrojka ukazatelja na jelement, kotoryj stoit posle udaljaemogo
+
+4) Udalenie jeementa \hypertarget{_list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\index{List.\+cpp@{List.\+cpp}!main@{main}}
+\index{main@{main}!List.\+cpp@{List.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Glavnaja funkcija. 
+
+Vvod kolichestva dejstvij so spiskom
+
+Cikl dejstvij so spiskom\+:
+
+Pechat\textquotesingle{} spiska \hypertarget{_list_8cpp_aefdc6c4e6076f000ab761f54f8febff1}{}\index{List.\+cpp@{List.\+cpp}!Print\+L\+I\+S\+T@{Print\+L\+I\+S\+T}}
+\index{Print\+L\+I\+S\+T@{Print\+L\+I\+S\+T}!List.\+cpp@{List.\+cpp}}
+\subsubsection[{Print\+L\+I\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+L\+I\+S\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_aefdc6c4e6076f000ab761f54f8febff1}
+
+
+Funkcija pechati spiska. 
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_list_8cpp_a61bd81e6f5c687a863294b2c3404f0bc}{}\index{List.\+cpp@{List.\+cpp}!p\+Head@{p\+Head}}
+\index{p\+Head@{p\+Head}!List.\+cpp@{List.\+cpp}}
+\subsubsection[{p\+Head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+I\+S\+T}$\ast$ p\+Head}\label{_list_8cpp_a61bd81e6f5c687a863294b2c3404f0bc}
